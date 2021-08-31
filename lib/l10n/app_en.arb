@@ -1,0 +1,25 @@
+{
+    "language": "English",
+    "navbar_home": "HOME",
+    "navbar_about": "ABOUT",
+    "navbar_projects": "PROJECTS",
+    "navbar_contact": "CONTACT",
+    "city": "Shimla, India",
+    "about_header": "About Me",
+    "about_who": "Prashant Singh, Software Developer",
+    "about_text": "I’m a Student from Atal Bihari Vajpayee Government Institute of Engineering and Technology majoring in Computer Science.",
+    "about_technologies": "Technologies I have worked with:",
+    "about_name": "Name",
+    "name": "Prashant Singh",
+    "about_advice": "click once to copy",
+    "about_mobile_tile_darkmode": "Dark Mode",
+    "about_mobile_tile_language": "Language",
+    "projects_header": "Portfolio",
+    "contact_header": "contact me",
+    "projects_advice": "Tap to read more"
+
+
+
+
+
+}
