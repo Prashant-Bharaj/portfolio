@@ -205,9 +205,9 @@ class _MainPageState extends State<MainPage> {
             _appBarActions(
                 _sectionsName[i], i, _sectionsIcons[i], _themeProvider),
           const SizedBox(width: 15.0),
-          // Container(
-          //     padding: EdgeInsets.only(top: 4),
-          //     child: dropDownButtonBuild(_localProvider, _themeProvider)),
+          Container(
+              padding: EdgeInsets.only(top: 4),
+              child: dropDownButtonBuild(_localProvider, _themeProvider)),
           const SizedBox(width: 15.0),
           Icon(
             Icons.dark_mode_outlined,
@@ -230,33 +230,33 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
-  // DropdownButton<String> dropDownButtonBuild(LocaleProvider _localProvider, ThemeProvider _themeProvider) {
-  //   return DropdownButton(
-  //     dropdownColor: _themeProvider.lightTheme ? Colors.white: Colors.black,
-  //     style: TextStyle(
-  //       color: _themeProvider.lightTheme? Colors.black : Colors.white
-  //     ),
-  //     underline: Container(
-  //       height: 0,
-  //       width: 0,
-  //     ),
-  //     value: dropdownValue,
-  //     onChanged: (String? newValue) {
-  //       setState(() {
-  //         dropdownValue = newValue!;
-  //       });
-  //       newValue == 'RU'
-  //           ? _localProvider.setLocale(Locale('ru'))
-  //           : _localProvider.setLocale(Locale('en'));
-  //     },
-  //     items: <String>['EN', "RU"].map<DropdownMenuItem<String>>((String value) {
-  //       return DropdownMenuItem<String>(
-  //         value: value,
-  //         child: Text(value),
-  //       );
-  //     }).toList(),
-  //   );
-  // }
+  DropdownButton<String> dropDownButtonBuild(LocaleProvider _localProvider, ThemeProvider _themeProvider) {
+    return DropdownButton(
+      dropdownColor: _themeProvider.lightTheme ? Colors.white: Colors.black,
+      style: TextStyle(
+        color: _themeProvider.lightTheme? Colors.black : Colors.white
+      ),
+      underline: Container(
+        height: 0,
+        width: 0,
+      ),
+      value: dropdownValue,
+      onChanged: (String? newValue) {
+        setState(() {
+          dropdownValue = newValue!;
+        });
+        newValue == 'HI'
+            ? _localProvider.setLocale(Locale('hi'))
+            : _localProvider.setLocale(Locale('en'));
+      },
+      items: <String>['EN', "HI"].map<DropdownMenuItem<String>>((String value) {
+        return DropdownMenuItem<String>(
+          value: value,
+          child: Text(value),
+        );
+      }).toList(),
+    );
+  }
 
   Widget _appBarActions(
       String childText, int index, IconData icon, ThemeProvider themeProvider) {
@@ -337,19 +337,19 @@ class _MainPageState extends State<MainPage> {
                   activeColor: kPrimaryColor,
                 ),
               ),
-              // ListTile(
-              //   leading: Icon(
-              //     Icons.language,
-              //     color: switchColor,
-              //   ),
-              //   title: Text(
-              //       AppLocalizations.of(context)!.about_mobile_tile_language,
-              //       style: TextStyle(color: switchColor)),
-              //   trailing: dropDownButtonBuild(
-              //     _localProvider,
-              //     _themeProvider,
-              //   ),
-              // ),
+              ListTile(
+                leading: Icon(
+                  Icons.language,
+                  color: switchColor,
+                ),
+                title: Text(
+                    AppLocalizations.of(context)!.about_mobile_tile_language,
+                    style: TextStyle(color: switchColor)),
+                trailing: dropDownButtonBuild(
+                  _localProvider,
+                  _themeProvider,
+                ),
+              ),
               Divider(
                 color:
                     _themeProvider.lightTheme ? Colors.grey[600] : Colors.white,

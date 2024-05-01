@@ -1,0 +1,20 @@
+{
+    "language": "हिंदी",
+    "navbar_home": "होम",
+    "navbar_about": "मेरे बारे में",
+    "navbar_projects": "प्रोजेक्ट",
+    "navbar_contact": "संपर्क करें",
+    "city": "शिमला, भारत",
+    "about_header": "मेरे बारे में",
+    "about_who": "प्रशांत सिंह, सॉफ्टवेयर डेवलपर",
+    "about_text": "मैं अटल बिहारी वाजपेयी सरकारी इंजीनियरिंग और प्रौद्योगिकी संस्थान से कंप्यूटर विज्ञान में स्नातक हूँ।",
+    "about_technologies": "मैंने जिन तकनीकों के साथ काम किया है:",
+    "about_name": "नाम",
+    "name": "प्रशांत सिंह",
+    "about_advice": "कॉपी करने के लिए एक बार क्लिक करें",
+    "about_mobile_tile_darkmode": "डार्क मोड",
+    "about_mobile_tile_language": "भाषा",
+    "projects_header": "पोर्टफोलियो",
+    "contact_header": "मुझसे संपर्क करें",
+    "projects_advice": "अधिक पढ़ने के लिए टैप करें"
+}

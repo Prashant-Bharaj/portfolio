@@ -19,9 +19,11 @@ void launchURL(String _url) async =>
     await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
 
 final kTools = [
+  "Java",
+  "Object Modeling",
+  "SOLID and DRY principle",
   "Dart",
   "Flutter",
-  "Java",
   "C/C++",
   "Python",
   "Machine Learning",

@@ -6,6 +6,7 @@ import 'package:portfolio/view/widgets/toolsTechWidget.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 import '../../constants.dart';
 
@@ -22,6 +23,7 @@ class AboutMobile extends StatelessWidget {
       ),
       color: _themeProvider.lightTheme ? Colors.white : Colors.black,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           CustomSectionHeading(
               text: AppLocalizations.of(context)!.about_header),
@@ -85,22 +87,32 @@ class AboutMobile extends StatelessWidget {
                   fontSize: height * 0.015),
             ),
           ),
-          Row(
+          // ResponsiveRowColumn(layout: ResponsiveRowColumnType.ROW, children: [
+          //   for (int i = 0; i < kTools.length; i++)
+          //     ResponsiveRowColumnItem(
+          //       child: ToolTechWidget(
+          //         techName: kTools[i],
+          //       ),
+          //     ),
+          // ]),+
+          Wrap(
+            // mainAxisSize: MainAxisSize.min,
+            verticalDirection: VerticalDirection.down,
             children: [
-              for (int i = 0; i <= 4; i++)
+              for (int i = 0; i < kTools.length; i++)
                 ToolTechWidget(
                   techName: kTools[i],
                 ),
             ],
           ),
-          Row(
-            children: [
-              for (int i = 5; i < kTools.length; i++)
-                ToolTechWidget(
-                  techName: kTools[i],
-                ),
-            ],
-          ),
+          // Row(
+          //   children: [
+          //     for (int i = 5; i < kTools.length; i++)
+          //       ToolTechWidget(
+          //         techName: kTools[i],
+          //       ),
+          //   ],
+          // ),
           SizedBox(
             height: height * 0.015,
           ),
